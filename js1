@@ -1,0 +1,35 @@
+let yournfts = [];
+
+function mintNFT(name, age, hobby) {
+  const nft = { name, age, hobby };
+  yournfts.push(nft);
+  console.log("Created NFT:", nft.name); 
+}
+
+function listNFTs() {
+  for (let i = 0; i < yournfts.length; i++) {
+    console.log("\nNFT ID:", i + 1);
+    console.log("Name:", yournfts[i].name);
+    console.log("Age:", yournfts[i].age);
+    console.log("Hobby:", yournfts[i].hobby);
+  }
+}
+
+function getTotalSupply() {
+  console.log("\nTotal NFTs:", yournfts.length);
+}
+
+mintNFT("RSJH", "infinite", "solo travelling");
+mintNFT("HELLO", "beautiful", "54354500");
+mintNFT("Tom", "naughty", "407657650");
+mintNFT("Shinchan", "naughty", "7795");
+
+
+listNFTs();
+
+
+getTotalSupply();
+
+
+
+
